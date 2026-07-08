@@ -1,4 +1,49 @@
+# --- Secrets (절대 커밋 금지) ---
 .env
 .env.*
-data/
-!data/.gitkeep
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+**/kis_token_cache.json
+
+# --- Local data ---
+/data/**
+!/data/.gitkeep
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Caches / models ---
+.cache/
+.huggingface/
+
+# --- Runtime / logs ---
+*.log
+*.pid
+*.lock
+nohup.out
+
+# --- IDE / OS ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+.cursor/

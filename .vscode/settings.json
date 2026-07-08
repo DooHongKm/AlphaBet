@@ -1,0 +1,9 @@
+{
+  "explorer.excludeGitIgnore": true,
+  "files.watcherExclude": {
+    "**/.venv/**": true,
+    "**/__pycache__/**": true,
+    "**/.pytest_cache/**": true,
+    "**/*.egg-info/**": true
+  }
+}
